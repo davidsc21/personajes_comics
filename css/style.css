@@ -88,6 +88,10 @@ body{
     color: red;
 }
 
+.hero h3{
+    font-family: "Marvel", sans-serif;
+}
+
 .btn-mas{
     padding: 10px;
     background-color: red;
