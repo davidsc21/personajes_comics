@@ -31,7 +31,7 @@
                 <hr>
                 <p id="sinopsis">Tras ser mordido por una araña modificada, Peter Parker obtiene poderes sobrehumanos y se convierte en Spider-Man, un héroe que protege Nueva York mientras aprende a equilibrar su vida y su responsabilidad.</p>
                 <div class="btn-mas">
-                    <a href="#">ver más</a>
+                    <a href="#" onclick="mostrarmodal()">ver más</a>
                 </div>
             </div>
             <div class="hero">
@@ -47,7 +47,7 @@
                 </div>
             </div>
             <div class="hero">
-                <h1 id="nombre-personaje">Stephen strange</h1>
+                <h1 id="nombre-personaje">Stephen Strange</h1>
                 <img src="img/DoctorStrange.webp" width="200px" height="300px" id="imagen">
                 <h2 id="seudonimo">Doctor Strange</h2>
                 <h2 class="casa">MARVEL</h2>
@@ -59,15 +59,22 @@
                 </div>
             </div>
             <div class="hero">
-                <h1 id="nombre-personaje">Stephen strange</h1>
-                <img src="img/DoctorStrange.webp" width="200px" height="300px" id="imagen">
-                <h2 id="seudonimo">Doctor Strange</h2>
-                <h2 class="casa">MARVEL</h2>
+                <h1 id="nombre-personaje"></h1>
+                <img src="#" width="200px" height="300px" id="imagen">
+                <h2 id="seudonimo"></h2>
+                <h2 class="casa"></h2>
                 <hr>
-                <p id="sinopsis">Stephen Strange, un neurocirujano brillante pero arrogante, ve su vida desmoronarse tras un accidente que daña sus manos. En busca de una cura, encuentra a The Ancient One, quien le revela un mundo oculto de magia y poderes místicos que cambiarán su destino para siempre.</p>
+                <p id="sinopsis"></p>
                 <div class="btn-mas">
                     <a href="#">ver más</a>
                 </div>
+            </div>
+        </div>
+        <div id="modal" class="modal">
+            <span class="close-modal" onclick="cerrarmodal()">&times</span>
+            <div id="contenido-modal" class="contenido-modal">
+                <img src="img/spiderman.webp" width="300rem"> 
+                <p>hola esto es un texto de prueba</p> 
             </div>
         </div>
     </div>
