@@ -12,7 +12,7 @@
 </head>
 <body>
     <div class="container">
-        <div class="search-box">
+        <search-box>
             <div class="row">
                 <input type="text" 
                 class="search-bar" 
@@ -20,7 +20,7 @@
                 autocomplete="off"
                 >
             </div>
-        </div>
+        </search-box>
         <div class="hero-container">
             <div class="hero">
                 <h1 id="nombre-personaje">Peter Parker</h1>
@@ -31,7 +31,7 @@
                 <hr>
                 <p id="sinopsis">Tras ser mordido por una araña modificada, Peter Parker obtiene poderes sobrehumanos y se convierte en Spider-Man, un héroe que protege Nueva York mientras aprende a equilibrar su vida y su responsabilidad.</p>
                 <div class="btn-mas">
-                    <a href="#" onclick="mostrarmodal()">ver más</a>
+                    <a href="#" onclick="mostrarmodal(0)">ver más</a>
                 </div>
             </div>
             <div class="hero">
@@ -43,7 +43,7 @@
                 <hr>
                 <p id="sinopsis">Es un vigilante enmascarado que sirve como el avatar del dios egipcio Khonshu. Detrás de la máscara está Marc Spector, un hombre que comparte su mente con otras personalidades como Steven Grant y Jake Lockley. </p>
                 <div class="btn-mas">
-                    <a href="#">ver más</a>
+                    <a href="#" onclick="mostrarmodal(1)">ver más</a>
                 </div>
             </div>
             <div class="hero">
@@ -55,26 +55,44 @@
                 <hr>
                 <p id="sinopsis">Stephen Strange, un neurocirujano brillante pero arrogante, ve su vida desmoronarse tras un accidente que daña sus manos. En busca de una cura, viaja al Himalaya y encuentra a The Ancient One, quien le revela un mundo de magia y poderes místicos.</p>
                 <div class="btn-mas">
-                    <a href="#">ver más</a>
+                    <a href="#" onclick="mostrarmodal(2)">ver más</a>
                 </div>
             </div>
             <div class="hero">
-                <h1 id="nombre-personaje"></h1>
-                <img src="#" width="200px" height="300px" id="imagen">
-                <h2 id="seudonimo"></h2>
-                <h2 class="casa"></h2>
+                <h1 id="nombre-personaje">Eddie Brock</h1>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQytghTpxh33po7akKyb5cQgQNZm4bh1MJVaQ&s" width="200px" height="300px" id="imagen">
+                <h2 id="seudonimo">Venom</h2>
+                <h2 class="casa">MARVEL</h2>
+                <h3 id="aparacion" class="aparicion">Primera aparicion: 1988</h3>
                 <hr>
-                <p id="sinopsis"></p>
+                <p id="sinopsis">Venom es un anti-héroe y uno de los villanos más populares de Marvel. Es un simbionte alienígena que se une a Eddie Brock, un periodista que busca venganza contra Spider-Man.</p>
                 <div class="btn-mas">
-                    <a href="#">ver más</a>
+                    <a href="#" onclick="mostrarmodal(3)">ver más</a>
+                </div>
+            </div>
+             <div class="hero">
+                <h1 id="nombre-personaje">Elizabeth Braddock</h1>
+                <img src="https://cdn.marvel.com/content/1x/psylocke2024001_habchi.jpg" width="200px" height="300px" id="imagen">
+                <h2 id="seudonimo">Psylocke</h2>
+                <h2 class="casa">MARVEL</h2>
+                <h3 id="aparacion" class="aparicion">Primera aparicion: 1976</h3>
+                <hr>
+                <p id="sinopsis">Psylocke, cuyo nombre real es Elizabeth Braddock, es una mutante con habilidades telepáticas y un dominio avanzado del combate cuerpo a cuerpo.</p>
+                <div class="btn-mas">
+                    <a href="#" onclick="mostrarmodal(4)">ver más</a>
                 </div>
             </div>
         </div>
         <div id="modal" class="modal">
             <span class="close-modal" onclick="cerrarmodal()">&times</span>
             <div id="contenido-modal" class="contenido-modal">
-                <img src="img/spiderman.webp" width="300rem"> 
-                <p>hola esto es un texto de prueba</p> 
+                <img id="modal-img" src="" width="300rem"> 
+                <div class="textcont" id="textcont">    
+                    <h1 id="modal-name"></h1>
+                    <h2 id="modal-realname"></h2>
+                    <hr style="border: 1px solid black; width: 300px;">
+                    <p id="descripcion-larga"></p>
+                </div>    
             </div>
         </div>
     </div>
